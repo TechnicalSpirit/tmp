@@ -41,7 +41,7 @@ class NameApi {
 
     private function get_user_by_id(int $vid):mixed
     {
-        foreach ($result_call->objects as $_ => $value) {
+        foreach ($result_call->objects as $value) {
             if ($value->id == $vid) {
                 return $value;
             }
